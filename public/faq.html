@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - TravelTrails</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+    .faq-header {
+      text-align: center;
+      padding: 30px;
+      background-color: #007bff;
+      color: white;
+    }
+    .faq-header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .faq-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion-title {
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    .accordion-title:hover {
+      background-color: #007bff;
+      color: white;
+    }
+    .accordion-title i {
+      transition: transform 0.3s ease;
+    }
+    .accordion-content {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .accordion-content p {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #555;
+    }
+    .accordion-title.active i {
+      transform: rotate(180deg);
+    }
+    .accordion-title.active {
+      background-color: #007bff;
+      color: white;
+    }
+    .question-box {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    .question-box h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #007bff;
+    }
+    .question-box textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      resize: none;
+    }
+    .question-box button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .question-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TravelTrails</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Packages</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="booknow.html">
+        <button class="book-now-btn">Book Now</button>
+    </a>
+    
+</header>
+<div class="faq-header">
+  <h1>Frequently Asked Questions</h1>
+  <p>Find answers to commonly asked questions about TravelTrails</p>
+</div>
+
+<div class="faq-container">
+  <!-- General Questions -->
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>General Questions</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <p><strong>What is TravelTrails?</strong> TravelTrails is an online platform for planning and booking your dream vacations effortlessly.</p>
+      <p><strong>How can I plan my trip using this website?</strong> Use our search tool to select destinations, customize your trip, and book packages based on your preferences.</p>
+      <p><strong>Is it necessary to create an account to book a trip?</strong> Yes, an account is needed to manage bookings and enjoy a personalized experience.</p>
+    </div>
+  </div>
+
+  <!-- Booking-Related Questions -->
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>Booking-Related Questions</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <p><strong>How do I book a trip/package?</strong> Browse our packages, choose one, and follow the checkout process to confirm your booking.</p>
+      <p><strong>Can I make changes to my booking?</strong> Yes, you can modify your booking by contacting our support team.</p>
+      <p><strong>Is there an option to customize a travel package?</strong> Yes, visit our "Custom Trip Planning" section to create a tailored itinerary.</p>
+    </div>
+  </div>
+
+  <!-- Cancellations and Refunds -->
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>Cancellations and Refunds</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <p><strong>What is the cancellation policy?</strong> Check our Policies page for detailed information about cancellations and refunds.</p>
+      <p><strong>How do I cancel my booking?</strong> Visit your account dashboard or contact our support team for assistance.</p>
+      <p><strong>When will I receive my refund?</strong> Refunds are processed within 7-10 business days of cancellation.</p>
+    </div>
+  </div>
+
+  <!-- Deals and Offers -->
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>Deals and Offers</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <p><strong>Are there discounts for group bookings?</strong> Yes, group discounts are available. Contact us for details.</p>
+      <p><strong>How do I apply a promotional code?</strong> Enter your promotional code during checkout to receive the discount.</p>
+      <p><strong>Are last-minute deals available?</strong> Yes, check the Deals page for updated last-minute offers.</p>
+    </div>
+  </div>
+
+  <!-- Safety and Travel Guidelines -->
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>Safety and Travel Guidelines</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="accordion-content">
+      <p><strong>Are the travel guides verified professionals?</strong> Yes, all guides are certified and experienced in their respective fields.</p>
+      <p><strong>What safety measures are in place?</strong> We ensure that all trips adhere to strict safety and hygiene protocols.</p>
+    </div>
+  </div>
+</div>
+
+<div class="question-box">
+  <h3>Have More Questions?</h3>
+  <textarea placeholder="Type your question here..."></textarea>
+  <!-- If user wants to submit a question, link to Contact Us page -->
+  <a href="contact.html">
+    <button>Submit Question</button>
+  </a>
+</div>
+
+
+<script>
+  const accordionItems = document.querySelectorAll('.accordion-title');
+  accordionItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.accordion-title').forEach(title => {
+        title.classList.remove('active');
+        title.nextElementSibling.style.maxHeight = null;
+      });
+      if (!isActive) {
+        item.classList.add('active');
+        const content = item.nextElementSibling;
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

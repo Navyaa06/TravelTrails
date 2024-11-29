@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - TravelTrails</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+    .hero-section {
+      background: url('https://mapmygenome.in/cdn/shop/articles/How_to_Stay_Healthy_While_Traveling_-_Tips_and_Insights_for_a_Safe_Journey.webp?v=1718688910') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 8px;
+    }
+    .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .about-content {
+      padding: 40px 20px;
+    }
+    .card {
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+    .team-section img {
+      border-radius: 50%;
+    }
+    .testimonial-card {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .cta-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 8px;
+    }
+    .cta-section a {
+      color: rgb(25, 175, 245);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">TravelTrails</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Packages</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="booknow.html">
+        <button class="book-now-btn">Book Now</button>
+    </a>
+    
+</header>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1>Welcome to TravelTrails</h1>
+    <p>Your ultimate companion for unforgettable journeys.</p>
+  </div>
+
+  <!-- About Content -->
+  <div class="container about-content">
+    <div class="row">
+      <!-- Introduction -->
+      <div class="col-lg-6">
+        <h3>About Us</h3>
+        <p>
+          TravelTrails is dedicated to helping travelers explore the world with ease and affordability.
+          Our platform offers a range of holiday packages, personalized travel planning, and expert support.
+        </p>
+        <p>Founded with a passion for travel, we strive to make every trip memorable and hassle-free.</p>
+      </div>
+      <!-- Image -->
+      <div class="col-lg-6">
+        <img src="https://t4.ftcdn.net/jpg/00/65/48/25/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg" class="img-fluid rounded" alt="Travel">
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div class="container mt-5">
+    <h3 class="text-center">Why Choose Us?</h3>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="text-center">Wide Range of Destinations</h5>
+          <p>
+            Discover beautiful places worldwide, from serene beaches to breathtaking mountains.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="text-center">Affordable Pricing</h5>
+          <p>
+            We offer competitive pricing to ensure you get the best value for your money.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="text-center">Expert Support</h5>
+          <p>
+            Our team of experts is here to assist you at every step of your journey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="container mt-5">
+    <h3 class="text-center">Meet Our Team</h3>
+    <div class="row mt-4 text-center team-section">
+      <!-- Modified to use a local image -->
+      <div class="col-md-4">
+        <img src="images/team-member2.jpg" alt="Team Member" class="img-fluid rounded-circle" style="max-width: 100px; height: auto;">
+        <h5 class="mt-3">Navya A & Lavanya A</h5>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/team-member3.jpg" alt="Team Member" class="img-fluid rounded-circle" style="max-width: 100px; height: auto;">
+        <h5 class="mt-3">Lavanya A</h5>
+        <p>Travel Expert</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/team-member1.jpg" alt="Team Member" class="img-fluid rounded-circle" style="max-width: 100px; height: auto;">
+        <h5 class="mt-3">Navya A</h5>
+        <p>Customer Support Lead</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="container mt-5">
+    <h3 class="text-center">What Our Customers Say</h3>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p>
+            "TravelTrails made my dream vacation come true! Everything was perfectly organized."
+          </p>
+          <p class="text-end">- Sarah L.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p>
+            "The team at TravelTrails is amazing. They helped me plan my trip in no time."
+          </p>
+          <p class="text-end">- David R.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="cta-section mt-5">
+    <h3>Start Planning Your Adventure Today</h3>
+    <p>Explore, dream, and travel with TravelTrails.</p>
+    <a href="contact.html" class="btn btn-light mt-3">Contact Us</a>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Travel Stories | TravelTrails</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+        .hero-section {
+            background: url('https://cdn.pixabay.com/photo/2021/08/03/11/48/canal-6519196_640.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            background-size: cover;
+            height: 500px;
+        }
+        .hero-section h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .blog-post {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+        .blog-image {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .blog-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .blog-excerpt {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .btn-read-more {
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section-heading {
+            text-align: center;
+            margin: 50px 0;
+            color: #007bff;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TravelTrails</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+               
+                <li><a href="about.html">About</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="booknow.html">
+            <button class="book-now-btn">Book Now</button>
+        </a>
+        
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Blog & Travel Stories</h1>
+        <p>Explore the world's most inspiring destinations through our stories and tips.</p>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container my-5">
+        <h2 class="section-heading">Featured Travel Stories</h2>
+        <div class="row">
+            <!-- Blog Post 1: Paris -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://images.squarespace-cdn.com/content/v1/569e766e69492e9dd5373ef6/1552923414901-Q29LZ4RGY66QB896M82T/paris-night-photo-tour-007.jpg" alt="Paris" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Romantic Escape to Paris</h5>
+                        <p class="blog-excerpt">Discover the City of Light, from its iconic landmarks to hidden gems perfect for a romantic getaway.</p>
+                        <!-- Link to Google search for Paris -->
+                        <a href="https://www.google.com/search?q=Paris+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2: Maldives -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://content.paulreiffer.com/wp-content/uploads/2014/05/Huvafen-Fushi-Sunrise-Dawn-Maldives-Overwater-Spa-Paul-Reiffer-Professional-Landscape-Photograph-Photographer-Pink-Blue-Sea-Ocean-Jetty-Wooden-Per-Aquum@2x.jpg" alt="Maldives" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">The Maldives: Paradise on Earth</h5>
+                        <p class="blog-excerpt">Escape to the Maldives, where crystal-clear waters and luxurious resorts await you.</p>
+                        <!-- Link to Google search for Maldives -->
+                        <a href="https://www.google.com/search?q=Maldives+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3: Tokyo -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://plus.unsplash.com/premium_photo-1666700698920-d2d2bba589f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9reW8lMjByYWlufGVufDB8fDB8fHww" alt="Tokyo" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Exploring the Wonders of Tokyo</h5>
+                        <p class="blog-excerpt">From futuristic skyscrapers to ancient temples, Tokyo offers a perfect blend of the old and new.</p>
+                        <!-- Link to Google search for Tokyo -->
+                        <a href="https://www.google.com/search?q=Tokyo+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4: Kenya -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://www.travelandleisure.com/thmb/yTXraNrnwAhrDXxesOyo_9hGglE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/safari-truck-giraffes-micato-safaris-SAFARIGUIDETIPS0721-2549bb165aa34dc193cb8b6f3958654b.jpg" alt="Kenya" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Kenya: A Safari Adventure</h5>
+                        <p class="blog-excerpt">Embark on a thrilling safari in Kenya's world-renowned national parks and experience the wildlife like never before.</p>
+                        <!-- Link to Google search for Kenya -->
+                        <a href="https://www.google.com/search?q=Kenya+safari+travel" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5: Swiss Alps -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://entiretravel.imgix.net/getmedia/a754b4ea-6056-4359-9694-a75763a9c2b8/switzerland_mountains.jpg?auto=format" alt="Swiss Alps" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Adventure in the Swiss Alps</h5>
+                        <p class="blog-excerpt">Conquer majestic peaks and enjoy breathtaking landscapes in Switzerland's iconic mountain range.</p>
+                        <!-- Link to Google search for Swiss Alps -->
+                        <a href="https://www.google.com/search?q=Swiss+Alps+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 6: Patagonia -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://jakubpolomski.com/wp-content/uploads/2023/05/Patagonia-Landscape-Mountains-in-Patagonia-140200SAM4715-1200x900.jpg" alt="Patagonia" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Patagonia: A Nature Lover's Dream</h5>
+                        <p class="blog-excerpt">Discover the remote beauty of Patagonia, where glaciers, mountains, and wildlife await adventurers.</p>
+                        <!-- Link to Google search for Patagonia -->
+                        <a href="https://www.google.com/search?q=Patagonia+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 7: Grand Canyon Road -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://www.xanterra.com/content/uploads/2018/11/road-trips-best-scenic-drives-in-the-national-parks-2-1024x683.jpg" alt="Grand Canyon Road" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">The Grand Canyon Road Trip</h5>
+                        <p class="blog-excerpt">Take a road trip through the Grand Canyon, one of the most iconic natural wonders in the world.</p>
+                        <!-- Link to Google search for Grand Canyon Road -->
+                        <a href="https://www.google.com/search?q=Grand+Canyon+road+trip" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 8: India -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://s7ap1.scene7.com/is/image/incredibleindia/2-vitthala-temple-complex-hampi-karnataka-city-hero?qlt=82&ts=1726761927494" alt="India" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">India: A Journey Through History and Culture</h5>
+                        <p class="blog-excerpt">From ancient temples to bustling markets, India offers a rich cultural experience for all travelers.</p>
+                        <!-- Link to Google search for India -->
+                        <a href="https://www.google.com/search?q=India+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 9: Antarctic Cruise Adventure -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://media.cntraveler.com/photos/626704edd4012873b417528e/16:9/w_2560%2Cc_limit/Viking%2520Octantis_C-VC_OCTANTIS_Antarctica_Ship_Fleet_10x8_300dpi.jpg" alt="Antarctic Cruise" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Antarctic Cruise Adventure</h5>
+                        <p class="blog-excerpt">Experience the beauty and mystery of Antarctica with a once-in-a-lifetime cruise through the icy wilderness.</p>
+                        <!-- Link to Google search for Antarctic Cruise -->
+                        <a href="https://www.google.com/search?q=Antarctic+cruise+adventure" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 10: Iceland -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="https://www.bruisedpassports.com/wp-content/uploads/2018/02/winter-road-trip-iceland-itinerary-planning-10-1024x684.jpg" alt="Iceland" class="blog-image">
+                    <div class="blog-content">
+                        <h5 class="blog-title">Iceland: Land of Fire and Ice</h5>
+                        <p class="blog-excerpt">Explore the land of glaciers, volcanoes, and hot springs on a trip to Iceland.</p>
+                        <!-- Link to Google search for Iceland -->
+                        <a href="https://www.google.com/search?q=Iceland+travel+guide" class="btn-read-more" target="_blank">Read More &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

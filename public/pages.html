@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages | TravelTrails</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+        .hero-section {
+            background: url('https://static.vecteezy.com/system/resources/previews/048/584/703/large_2x/a-high-definition-aerial-view-of-a-wooden-boat-floating-amidst-green-lily-pads-on-a-calm-body-of-water-surrounded-by-lush-vegetation-free-photo.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            background-size: cover;
+            height: 500px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .section-heading {
+            text-align: center;
+            margin: 30px 0;
+            color: #0099ff;
+        }
+        .icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TravelTrails</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+               
+                <li><a href="about.html">About</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="booknow.html">
+            <button class="book-now-btn">Book Now</button>
+        </a>
+        
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Explore Our Pages</h1>
+        <p>Your guide to every corner of TravelTrails</p>
+    </div>
+
+    <!-- Pages Section -->
+    <div class="container my-5">
+        <h2 class="section-heading">Discover What We Offer</h2>
+        <div class="row gy-4">
+            <!-- Blog/Travel Stories -->
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <i class="icon bi bi-book"></i>
+                    <h5 class="card-title">Blog & Travel Stories</h5>
+                    <p>Read inspiring travel stories and tips to plan your dream vacation.</p>
+                    <a href="blog.html" class="btn btn-primary">Explore Blog & Stories</a>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <i class="icon bi bi-question-circle"></i>
+                    <h5 class="card-title">FAQs</h5>
+                    <p>Get answers to all your questions about bookings and policies.</p>
+                    <a href="faq.html" class="btn btn-primary">FAQs</a>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <i class="icon bi bi-images"></i>
+                    <h5 class="card-title">Gallery</h5>
+                    <p>Explore stunning images from destinations around the world.</p>
+                    <a href="Gallery.html" class="btn btn-primary">Have a look!!</a>
+                </div>
+            </div>
+
+            
+            
+
+            
+
+            <!-- Policies -->
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <i class="icon bi bi-shield-check"></i>
+                    <h5 class="card-title">Policies</h5>
+                    <p>Read about our terms, conditions, and refund policies.</p>
+                    <a href="terms.html" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+
+            <!-- Sustainability -->
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <i class="icon bi bi-leaf"></i>
+                    <h5 class="card-title">Sustainability</h5>
+                    <p>Learn how we promote eco-tourism and responsible travel.</p>
+                    <a href="sustainability.html" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+
+            <!-- Careers -->
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

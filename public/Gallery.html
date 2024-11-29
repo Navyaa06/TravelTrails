@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - TravelTrails</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+    .gallery-header {
+      text-align: center;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+    }
+    .gallery-header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .gallery-header p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .gallery-container {
+      max-width: 1200px;
+      margin: 10px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px; /* Adjusted gap for better spacing */
+      padding: 0 20px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TravelTrails</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Packages</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="booknow.html">
+        <button class="book-now-btn">Book Now</button>
+    </a>
+    
+</header>
+<div class="gallery-header">
+  <h1>Gallery</h1>
+  <p>Explore stunning travel destinations and experiences from around the world</p>
+</div>
+
+<div class="gallery-container">
+  <!-- Image 1 -->
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnjYSHNWvlkS6-mVrvgislat61SWBQx4KWw&s" alt="Beach">
+  </div>
+  <!-- Image 2 -->
+  <div class="gallery-item">
+    <img src="https://img.freepik.com/premium-photo/family-walk-beach-travel-children-walking-by-sea-holiday-maldives-with-happy-grandparents-parents-elderly-people-mother-father-with-smile-nature-vacation-with-girl-siblings_590464-89569.jpg" alt="Beach Family">
+  </div>
+  <!-- Image 3 -->
+  <div class="gallery-item">
+    <img src="https://www.traveldailynews.asia/wp-content/uploads/2023/06/Hideaway-Beach-Resort-Spa-03.jpg" alt="Beach Resort">
+  </div>
+  <!-- Image 4 -->
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RFsFjC10wE1W_ePcJf-i5r8EX-cqiU6GuP_tZrMD-adcPK9wOo8aRd05MotDlJ9ecX8&usqp=CAU" alt="Mountain">
+  </div>
+  <!-- Image 5 -->
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0CSg2OVcm92eovmE1x1nBa2oKhScphgWsw&s" alt="Cityscape">
+  </div>
+  <!-- Image 6 -->
+  <div class="gallery-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9vpExx64Dxd-69rQCLtwtBs0QP3kFqk9Cjg&s" alt="Forest">
+  </div>
+  <!-- Image 7 -->
+  <div class="gallery-item">
+    <img src="https://etimg.etb2bimg.com/photo/81406055.cms" alt="Desert">
+  </div>
+  <!-- Image 8 -->
+  <div class="gallery-item">
+    <img src="https://www.heleninwonderlust.co.uk/wp-content/uploads/2022/02/Masai-Mara-Kenya-62-768x525.jpg" alt="Lake">
+  </div>
+  <!-- Image 9 -->
+  <div class="gallery-item">
+    <img src="https://image.cnbcfm.com/api/v1/image/107336102-1700284880470-gettyimages-663507425-56856f99-83eb-4196-8dfe-1b8d4b14bb77.jpeg?v=1700285095" alt="Wildlife">
+  </div>
+  <!-- Image 10 -->
+  <div class="gallery-item">
+    <img src="https://static.toiimg.com/photo/56759746.cms" alt="Adventure">
+  </div>
+  <div class="gallery-item">
+    <img src="https://etichotels.com/journal/wp-content/uploads/2023/11/Best-Tiime-To-Visit-India-ETIC-Hotels.jpg" alt="Adventure">
+  </div>
+  <div class="gallery-item">
+    <img src="https://b2846093.smushcdn.com/2846093/wp-content/uploads/2024/02/Tokyo-solo-travel-is-extremely-safe.jpg?lossy=2&strip=1&webp=1" alt="Adventure">
+  </div>
+  <div class="gallery-item">
+    <img src="https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/12/Intrepid-Travel-Iceland_Golden-Circle_jokulsarlon-glacier-lagoon-boat-tour_Ryan-Bolton7342.jpg" alt="Adventure">
+  </div>
+  <div class="gallery-item">
+    <img src="https://adventures.is/media/234688/t-winter-weekend-itinerary.jpg?anchor=center&mode=crop&width=530&height=330&rnd=133517846090000000&format=jpg&quality=70" alt="Adventure">
+  </div>
+</div>
+
+</body>
+</html>

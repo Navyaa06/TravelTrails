@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Travel Planning</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/048/584/703/large_2x/a-high-definition-aerial-view-of-a-wooden-boat-floating-amidst-green-lily-pads-on-a-calm-body-of-water-surrounded-by-lush-vegetation-free-photo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 15px; /* Adjusted for a cleaner look */
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Container styling */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Header styling */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #a2e2ee;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #98f2f5;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+        }
+
+        button {
+            background-color: #40c1c5;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #61e0e9;
+        }
+
+        /* Responsive grid for sections */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #ccc;
+        }
+
+        /* Filters Section */
+        .filters-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .filters-container h5 {
+            color: #a2e2ee;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .filters-container .form-label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .form-control, .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .btn-apply {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-apply:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TravelTrails</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="booknow.html">
+            <button class="book-now-btn">Book Now</button>
+        </a>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Book Your Dream Trip</h1>
+            <p>Fill in the details below to plan your perfect vacation.</p>
+        </div>
+
+        <form action="/booknow" method="POST">
+            <!-- Destination Details -->
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select your destination</option>
+                    <option value="India">India</option>
+                    <option value="Antartica">Antartica</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Patagonia">Patagonia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Swiss Alps">Swiss Alps</option>
+                    <option value="Tokyo">Tokyo</option>
+                </select>
+            </div>
+
+            <!-- Travel Dates -->
+            <div class="grid">
+                <div class="form-group">
+                    <label for="departure-date">Departure Date</label>
+                    <input type="date" id="departure-date" name="departureDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Return Date</label>
+                    <input type="date" id="return-date" name="returnDate">
+                </div>
+            </div>
+
+            <!-- Travelers -->
+            <div class="grid">
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" max="10" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" name="children" min="0" max="10" value="0">
+                </div>
+            </div>
+
+            <!-- Add-on Services -->
+            <div class="form-group">
+                <label for="addons">Add-on Services</label>
+                <textarea id="addons" name="addons" rows="3" placeholder="E.g., Guided tour, Travel insurance"></textarea>
+            </div>
+
+            <!-- Traveler Information -->
+            <div class="grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" name="number" placeholder="Enter your Phone number" required>
+                </div>
+            </div>
+
+            <!-- Additional Filters -->
+            <div class="filters-container">
+                <h5>More Filters</h5>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="budgetMax">Maximum Budget</label>
+                        <input type="number" id="budgetMax" name="budgetMax" placeholder="Enter amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="travel-type">Type of Travel</label>
+                        <select id="travel-type" name="travelType">
+                            <option value="Adventure">Adventure</option>
+                            <option value="Honeymoon">Honeymoon</option>
+                            <option value="Family">Family</option>
+                            <option value="Group">Group</option>
+                            <option value="Solo">Solo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="activities">Preferred Activities</label>
+                        <select id="activities" name="activities">
+                            <option value="Sightseeing">Sightseeing</option>
+                            <option value="Trekking">Trekking</option>
+                            <option value="Water Sports">Water Sports</option>
+                            <option value="Historical Tours">Historical Tours</option>
+                            <option value="Wildlife Safari">Wildlife Safari</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="accommodation" class="form-label">Accommodation Type</label>
+                        <select id="accommodation" name="accommodation">
+                            <option value="" selected>Choose...</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Resort">Resort</option>
+                            <option value="Camping">Camping</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transportMode" class="form-label">Mode of Transport</label>
+                        <select id="transportMode" name="transportMode">
+                            <option value="" selected>Choose...</option>
+                            <option value="Airplane">Airplane</option>
+                            <option value="Train">Train</option>
+                            <option value="Bus">Bus</option>
+                            <option value="Self-drive">Self-drive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mealPreference" class="form-label">Meal Preferences</label>
+                        <select id="mealPreference" name="mealPreference">
+                            <option value="" selected>Choose...</option>
+                            <option value="All Inclusive">All-inclusive</option>
+                            <option value="Breakfast Only">Breakfast-only</option>
+                            <option value="No Meals">No meals</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialDeals" class="form-label">Special Deals</label>
+                        <select id="specialDeals" name="specialDeals">
+                            <option value="" selected>Choose...</option>
+                            <option value="Discounts">Discounts</option>
+                            <option value="Last Minute Offers">Last-minute offers</option>
+                            <option value="Seasonal Packages">Seasonal packages</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class="btn-apply">Apply Filters</button>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Travel Planner. All rights reserved.</p>
+    </div>
+</body>
+</html>

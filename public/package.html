@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Travel Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/048/584/703/large_2x/a-high-definition-aerial-view-of-a-wooden-boat-floating-amidst-green-lily-pads-on-a-calm-body-of-water-surrounded-by-lush-vegetation-free-photo.jpg'); /* Replace with your image URL */
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }.logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0ad6f1;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .book-now-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #3cc9e2;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .package {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .package:hover {
+            transform: scale(1.05);
+        }
+        .package img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .package-content {
+            padding: 15px;
+        }
+        .package-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+        .package-description {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .package-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .book-button {
+            display: block;
+            text-align: center;
+            background-color: #30afb8;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .book-button:hover {
+            background-color: #61bcd3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TravelTrails</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+               
+                <li><a href="about.html">About</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="booknow.html">
+            <button class="book-now-btn">Book Now</button>
+        </a>
+        
+    </header>
+
+    <div class="container">
+       
+        <div class="package-grid">
+            <!-- Package 1 -->
+            <div class="package">
+                <img src="https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=" alt="Paris Getaway">
+                <div class="package-content">
+                    <h2 class="package-title">Paris Getaway</h2>
+                    <p class="package-description">Experience the charm of Paris with a 5-day, 4-night stay in the City of Light.</p>
+                    <p class="package-price">$1,500</p>
+                    <a href="booknow.html?title=Paris+Getaway&image=https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=" class="book-button">Book Now</a>
+
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package">
+                <img src="https://static.independent.co.uk/2024/01/07/11/3-4-scaled.png?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp" alt="Beach Paradise - Maldives">
+                <div class="package-content">
+                    <h2 class="package-title">Beach Paradise - Maldives</h2>
+                    <p class="package-description">Relax on the white sandy beaches of Maldives for a 7-day, 6-night experience.</p>
+                    <p class="package-price">$2,200</p>
+                    <a href="booknow.html?title=Beach+Paradise+-+Maldives&price=2200&image=https://static.independent.co.uk/2024/01/07/11/3-4-scaled.png?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package">
+                <img src="https://media.istockphoto.com/id/1188118008/photo/a-night-of-the-neon-street-at-the-downtown-in-shinjuku-tokyo-wide-shot.jpg?s=612x612&w=0&k=20&c=zE2AzmisWd4tRTnqdOxLUcP5SVZSrdkbc8lKOhJ5FvY=" alt="Tokyo Adventure">
+                <div class="package-content">
+                    <h2 class="package-title">Tokyo Adventure</h2>
+                    <p class="package-description">Explore the bustling streets and cultural sites of Tokyo for 6 days.</p>
+                    <p class="package-price">$1,800</p>
+                    <a href="booknow.html?title=Tokyo+Adventure&price=1800&image=https://media.istockphoto.com/id/1188118008/photo/a-night-of-the-neon-street-at-the-downtown-in-shinjuku-tokyo-wide-shot.jpg?s=612x612&w=0&k=20&c=zE2AzmisWd4tRTnqdOxLUcP5SVZSrdkbc8lKOhJ5FvY=" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="package">
+                <img src="https://www.travelandleisure.com/thmb/yTXraNrnwAhrDXxesOyo_9hGglE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/safari-truck-giraffes-micato-safaris-SAFARIGUIDETIPS0721-2549bb165aa34dc193cb8b6f3958654b.jpg" alt="Safari in Kenya">
+                <div class="package-content">
+                    <h2 class="package-title">Safari in Kenya</h2>
+                    <p class="package-description">Witness wildlife in their natural habitat with a 5-day African safari experience.</p>
+                    <p class="package-price">$2,500</p>
+                    <a href="booknow.html?title=Safari+in+Kenya&price=2500&image=https://www.travelandleisure.com/thmb/yTXraNrnwAhrDXxesOyo_9hGglE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/safari-truck-giraffes-micato-safaris-SAFARIGUIDETIPS0721-2549bb165aa34dc193cb8b6f3958654b.jpg" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 5 -->
+            <div class="package">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtVWJRIGu_xGpTjsQFMoy48GDvfFwl0RMN_Zu2nmX85hmYNz2DM9eM7fBRX5bZJuevQw&usqp=CAU" alt="Swiss Alps Ski Tour">
+                <div class="package-content">
+                    <h2 class="package-title">Swiss Alps Ski Tour</h2>
+                    <p class="package-description">Enjoy the best skiing experience in the Swiss Alps for 4 days.</p>
+                    <p class="package-price">$1,900</p>
+                    <a href="booknow.html?title=Swiss+Alps+Ski+Tour&price=1900&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtVWJRIGu_xGpTjsQFMoy48GDvfFwl0RMN_Zu2nmX85hmYNz2DM9eM7fBRX5bZJuevQw&usqp=CAU" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 6 -->
+            <div class="package">
+                <img src="https://images.squarespace-cdn.com/content/v1/6137f1eafdd46630c1744367/a6b78412-4173-4b22-b720-0ea6f4781cf9/DSC00808-2.jpg" alt="Patagonia Trekking">
+                <div class="package-content">
+                    <h2 class="package-title">Patagonia Trekking</h2>
+                    <p class="package-description">Embark on an adventurous trek through Patagonia for 10 days.</p>
+                    <p class="package-price">$3,000</p>
+                    <a href="booknow.html?title=Patagonia+Trekking&price=3000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz8-3eDsAaQVVYGxSYKxH6JBaHJ4nG_SgIWQyFGu23puNglKHVV2ucI2bjzc3mk4n3cXM&usqp=CAU" class="book-button">Book Now</a>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/78/57/24/clear-water-mandorak.jpg?w=1200&h=-1&s=1" alt="Grand Canyon Road Trip">
+                <div class="package-content">
+                    <h2 class="package-title">Indonesia</h2>
+                    <p class="package-description">Drive through the scenic beauty of Indonesia for 7 days.</p>
+                    <p class="package-price">$1,200</p>
+                    <a href="booknow.html?title=Grand+Canyon+Road+Trip&price=1200&image=https://media.istockphoto.com/id/1297413203/photo/hoover-dam-on-colorado-river-border-of-nevada-and-arizona-usa.jpg?s=612x612&w=0&k=20&c=UZKk6J5BDMIsflQTlAxSeSpkaWaAPr_5hx_5RUfZYXE=" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 8 -->
+            <div class="package">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/67071d9b6c8801f6a1d5576e/Colorful-northern-lights/0x0.jpg?format=jpg&width=960" alt="Iceland Northern Lights Tour">
+                <div class="package-content">
+                    <h2 class="package-title">Iceland Northern Lights Tour</h2>
+                    <p class="package-description">Witness the Aurora Borealis with a 4-day magical tour of Iceland.</p>
+                    <p class="package-price">$1,600</p>
+                    <a href="booknow.html?title=Iceland+Northern+Lights+Tour&price=1600&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScchTAEv2p8klj0jzj1RVpoKlzTpBoK8X4rA&usqp=CAU" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 9 -->
+            <div class="package">
+                <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" alt="Cultural Journey Through India">
+                <div class="package-content">
+                    <h2 class="package-title">Cultural Journey Through India</h2>
+                    <p class="package-description">Discover the rich culture of India over 10 days, including heritage sites and cuisine tours.</p>
+                    <p class="package-price">$2,000</p>
+                    <a href="booknow.html?title=Cultural+Journey+Through+India&price=2000&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMH3eQ9gENHNH2cPp1WcJEtbcWrh6GcTSLQ&usqp=CAU" class="book-button">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 10 -->
+            <div class="package">
+                <img src="https://cdn.audleytravel.com/4858/3470/79/205574-gentoo-penguins-antarctica.jpg" alt="Antarctic Cruise Adventure">
+                <div class="package-content">
+                    <h2 class="package-title">Antarctic Cruise Adventure</h2>
+                    <p class="package-description">Sail to the edge of the world with this 12-day Antarctic cruise adventure.</p>
+                    <p class="package-price">$5,500</p>
+                    <a href="booknow.html?title=Antarctic+Cruise+Adventure&price=5500&image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZppEyTbEM8YeSS7adErkBF6RzzpVwOqeVg&usqp=CAU" class="book-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
